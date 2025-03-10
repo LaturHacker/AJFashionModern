@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AJ Fashion | Accessories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="updateCartCount()">
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <h1>AJ Fashion</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+          <li><a href="sale.html">Sale</a></li>
+          <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="products container">
+    <h2 class="section-title">Accessories</h2>
+    <div class="grid products-grid">
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300x400?text=Luxury+Watch" alt="Luxury Watch">
+        <h3>Luxury Watch</h3>
+        <p>$99.99</p>
+        <button class="btn" onclick="addToCart('Luxury Watch', 99.99, 'https://via.placeholder.com/300x400?text=Luxury+Watch')">Add to Cart</button>
+      </div>
+      <div class="product-item">
+        <img src="https://via.placeholder.com/300x400?text=Designer+Bag" alt="Designer Bag">
+        <h3>Designer Bag</h3>
+        <p>$79.99</p>
+        <button class="btn" onclick="addToCart('Designer Bag', 79.99, 'https://via.placeholder.com/300x400?text=Designer+Bag')">Add to Cart</button>
+      </div>
+      <!-- More accessories as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 AJ Fashion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
